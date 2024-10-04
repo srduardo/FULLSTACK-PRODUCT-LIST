@@ -1,0 +1,29 @@
+.register-button {
+    display: flex;
+    align-self:last baseline;
+    justify-content: center;
+    
+    width: 100px;
+    height: 100px;
+    margin-bottom: 2.5vh;
+    margin-right: 5vh;
+    
+    position: absolute;
+    left: 90%;
+    
+    background-color: #7ADD95;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.register-button:hover {
+    background-color: #4DC16E;
+}
+
+.register-button > img {
+    width: 54px;
+    height: 54px;
+    
+    align-self: center;
+}
