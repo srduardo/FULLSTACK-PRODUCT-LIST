@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/register_window.css">
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/default_page.css">
     <link rel="stylesheet" href="/styles/register-button.css">
@@ -11,13 +12,43 @@
 </head>
 <body>
     <section class="main-container">
-        <section  class="product-container">
+        <article  class="product-container">
             <p>Nenhum produto existente</p>
-        </section>
+        </article>
 
-        <p>Nenhum produto selecionado</p>
+        <article>
+            <p>Nenhum produto selecionado</p>
+        </article>
 
-        <div class="register-button"><img src="/resources/register-icon.png" alt=""></div>
+        <div id="register-button"><img src="/resources/register-icon.png" alt=""></div>
+        
+        <div class="register-form-container">
+            <h1>Registrar produto</h1>
+
+            <form class="register-form" method="post">
+                <div class="name-and-value-container, containers">
+                    <label for="nome" class="name-label">Nome:</label>
+                    <input type="text" id="nome">
+                    <label for="valor" class="value-label">Valor:</label>
+                    <input type="number" id="valor">
+                </div>
+                
+                <div class="url-container, containers">
+                    <label for="link" class="url-label" style="white-space: nowrap;">Link da imagem:</label>
+                    <input type="url" id="link">
+                </div>
+                
+                <div class="description-container, containers">
+                    <label for="descricao" class="description-label">Descrição:</label>
+                    <input type="text" id="descricao">
+                </div>
+                
+                <div class="form-button">
+                    <button>Registrar</button>
+                </div>
+            </form>
+        </div>
+        
     </section>
 </body>
 </html>
